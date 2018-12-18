@@ -1,0 +1,314 @@
+/* ----------------------------------- ------------ */
+/* ---------------REGELES GENERALES--------------- */
+/* ----------------------------------- ---------- */
+
+* {
+	box-sizing: border-box;
+	margin:0;
+}
+
+html {
+     height: 100%;
+     background-color: #201e25;
+}
+
+h1 {
+	font-family: "LRT_Oksana";
+	font-size: 30px;
+	color :  #00ffff;
+}
+p{
+    font-family: "Amble";
+    font-size: 14px;
+    color: #c8c8c8;
+}
+
+/* ---------------POLICES DE CARACTERES--------------- */
+
+@font-face {
+	font-family: "Amble";
+	src: url("../fonts/Amble.ttf");
+}
+@font-face {
+	font-family: "LRT_Oksana";
+	src: url("../fonts/LRTOksana.ttf");
+}
+@font-face {
+	font-family: "TexasLED";
+	src: url("../fonts/TexasLED.ttf");
+}
+
+body { 
+	/* contient 3 parties : header article footer */
+	display: flex;
+	flex-direction: column;
+	/* justify-content : flex-end; */
+}
+ 
+.responsive /* class pour regrouper des attributs facilitant le format responsive */
+{ 
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ------------------------------------------------- */
+/* ---------------EN-TÊTE = HEADER --------------- */
+/* ----------------------------------------------- */
+header section {
+	display: flex;
+	position: fixed;
+	z-index: 70;
+	justify-content: space-around;
+	background-color: #3a3b41;
+	width: 100%;
+	height: 130px;
+}
+
+
+/* ---------------LOGOS PARTENAIRES--------------- */
+
+.logos_partenaires {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+}
+
+#logo_CG_header {
+	width : 400px ;
+	padding-top: 50px;
+} 
+
+/* ---------------MENU / NAVIGATION--------------- */
+nav {
+	display: flex;
+	position: fixed;
+	z-index: 60;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #201e25;
+	margin-top : 130px;
+	width: 100%;
+	height: 100px;
+}
+
+nav a {
+	font-family: "LRT_Oksana", sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	color : #c8c8c8;
+}
+/* couleur du mot "Accueil" pour cette page */
+#accueil { 
+	color :  #00ffff;
+}
+
+/* -------------------------            ------------ */
+/* ---------------CORPS Page Accueil--------------- */
+/* --------------------------------            --- */
+
+/* mise en page de l'article central avec flexbox */
+#article_page_accueil {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	margin-top: 230px;
+   	background-color: #201e25 ;
+ }
+
+/* ---------------------------------------------------- */
+/* ------------------CORPS PAGE BAR-------------------- */
+/* ---------------------------------------------------- */
+
+#page_bar{           /*section contenant titre + presentation bar + lien*/         
+    display: flex;              
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 25%;
+    width: 50%;
+    margin-top:250px;
+    padding: 20px 0px 20px 0px;
+    box-shadow:  5px 5px 5px 5px #00ffff;
+    
+}
+
+#page_bar h1{                 /*position du titre*/
+    margin-top:10px; 
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px #c8c8c8;
+}
+/*-------------article avec présentation bar + portrait équipe---------------*/
+
+#bar {                           /* positionnenemnt des 2 box*/
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;  
+}
+
+                /*----------présentation bar-------*/
+
+#bar_Rennes{                    /*image+texte bar  en colonne*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 0px 0px 50px;
+}
+
+#bar_Rennes img{                /*format image bar*/
+    width: 400px;
+    height: 200px;
+    padding: 25px 0px 0px 50px;
+}
+   
+#bar_Rennes p{   
+    width: 100px/*format texte bar*/
+    height: 100px;
+    padding-bottom: 10px;
+    margin: 20px 0px 20px 60px;  
+}
+
+            /*----------portrait equipe bar-------------*/
+
+#equipe div{                    /*boite portrait équipe */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px 25px 50px;    
+}
+
+#equipe img{                     /*format image equipe*/
+    width: 60px;
+    height: 80px ;
+    margin-right: 50px;
+}  
+
+#equipe p{                      /*format texte equipe*/
+    width: 200px;
+    height: 100px;
+    /*margin: 10px 10px 25px 50px;*/
+}
+
+/*---------------les boutons ronds pr les liens------------*/
+
+#lien{                          /*boites des liens*/
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 0px 20px 0px; 
+}
+
+#lien_tournoi{                      /*lien tournoi*/
+    border:none;
+	padding:30px 20px 30px 20px;
+	border-radius:50px;
+	box-shadow:3px 3px 12px #00ffff;
+	background:#201e25;
+	font:bold 13px LRT_Oksana;
+	color:#00ffff;
+}  
+#lien_contact{                      /*lien contact*/
+    margin: 0px 20px 0px 200px;
+    border:none;
+	padding:30px 15px 30px 15px;
+	border-radius:50px;
+	box-shadow:3px 3px 12px #00ffff;
+	background:#201e25;
+	font:bold 13px LRT_Oksana;
+	color:#00ffff;
+}  
+
+/* -------------------------------------------------------- */
+/* ------------------CORPS PAGE TOURNOI-------------------- */
+/* -------------------------------------------------------- */
+
+#tournoi{                           /*position des 3 colonnes*/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
+    padding: 10px 80px 0px 80px;
+}
+
+#tournoi article{                   /*position ds chaque colonne*/
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    width: 30%;
+    /*box-shadow: 3px 3px 12px #00ffff;
+    padding: 20px 20px 20px 20px;*/
+}
+
+#tournoi h1{                          /*titre des colonnes jeux*/
+    padding-bottom: 20px;
+}
+
+#tournoi img{
+    padding-bottom: 20px;   
+}
+
+#button input{                          /*création des boutons collne milieu*/
+    width: 250px;
+    height: 120px;
+    border:none;
+    box-shadow:3px 3px 12px #00ffff;
+    background:#201e25;
+	font:bold 15px LRT_Oksana;
+	color:#00ffff;
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;    
+}
+.jeux{                                  /*contour floutées jeux*/                             
+    box-shadow: 3px 3px 12px #00ffff;
+    padding: 20px 20px 20px 20px;
+}
+.rond{
+   
+    border:none;
+    padding:60px 15px 60px 15px;
+    border-radius: 50px;
+    box-shadow:3px 3px 12px #00ffff;
+	background:#201e25;
+	font:bold 13px LRT_Oksana;
+	color:#00ffff;
+    
+}
+     
+}
+
+/* ------------------------------------------------- */
+/* ---------------FOOTER Page Accueil--------------- */
+/* ----------------------------------------------- */
+
+footer {
+	display: flex;
+	/*position: absolute;*/
+	justify-content: space-around;
+	margin-top: 930px;
+	padding-top: 25px;
+	background-color: #201e25 ;
+}	
+
+footer ul{
+	list-style: none;
+}
+#petit_logo {
+	width: auto;
+	height: auto;
+}
+footer section {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	height: auto;
+}
+footer a {
+	font-family: "LRT_Oksana", sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color : #c8c8c8;
+}	
+
+

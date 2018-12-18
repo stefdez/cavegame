@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>bar_Rennes</title>
+        <link href="css/cavegame.css" rel="stylesheet"/>
+       <!-- <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"/>
+        <link href='image/Bazar.ttf' rel='stylesheet' /> -->
+    </head>
+    <body>
+        <!---------------------------------------------
+            adresse mail + mdp
+------------------------------------------------------>
+        <article>
+            <div>
+                <h1>informations de connection</h1>
+                <p>informations qui vous permetterons de vous connecter sur notre site</p>
+                <form>
+                    <!--<input method="post" action="formulaire.php">-->
+                    <input type="text" name="adresse_email" id="adresse email" placeholder="votre adresse mail"/>
+                    <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"/>    
+                    <input type="confpassword" name="confmdp" id="confmdp" placeholder="confirmer votre Mot de passe"/>                  
+                    <input id="envoyer" type="submit" value="Envoyer"/>
+                </form>
+            </div>
+  <!----------------------------------------------------------
+        les infos perso.
+--------------------------------------------------------->
+            <div>
+                <h1>informations personnelles</h1>
+                 <form>
+                      <label for="femme"> Femme</label>
+                      <input type="radio" id="femme" name="civilité" value="femme"/>
+                      <label for="homme"> Homme</label>
+                      <input type="radio" id="homme" name="civilité" value="homme"/>
+                       <!--
+                     <input method="post" action="formulaire.php">-->
+                      <input type="text" name="nom" id="nom" placeholder="Nom"/>
+                      <input type="text" name="prenom" id="prenom" placeholder="Prénom"/>
+                      <input type="number" name="date_naissance" id="date_naissance" placeholder="Date de naissance"/>
+                      <input type="text" name="adresse" id="adresse" placeholder="Adresse"/>
+                      <input type="number" name="code_postal" id="code_postal" placeholder="Code Postal"/>
+                      <input type="text" name="ville" id="ville" placeholder="Ville"/>
+                      <input type="number" name="tel" id="tel" placeholder="Téléphone"/>
+                      <input id="message" type="submit" value="Envoyer"/>
+                </form>
+            </div>
+        </article>
+    </body>
+</html>
